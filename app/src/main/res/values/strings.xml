@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ThiengosFlix</string>
+
+    <string name="frag_favorites">Favoritos</string>
+
+    <string name="navigation_drawer_open">Abrir menu gaveta</string>
+    <string name="navigation_drawer_close">Fechar menu gaveta</string>
+
+    <string name="nav_header_title">ThiengosFlix</string>
+    <string name="nav_header_subtitle">Os filmes mais atuais em seu smart</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_settings">Buscar</string>
+
+    <string name="item_label_launch">Lançamentos</string>
+    <string name="item_label_more_views">Mais visualizados</string>
+    <string name="item_label_week_recommended">Recomendados da semana</string>
+    <string name="item_label_categories">Categorias</string>
+    <string name="item_label_directors">Diretores</string>
+    <string name="item_label_actors_actress">Atores / atrizes</string>
+    <string name="item_label_favorites">Favoritos</string>
+
+    <string name="iv_cd_star_01">Primeira estrela da avaliação</string>
+    <string name="iv_cd_star_02">Segunda estrela da avaliação</string>
+    <string name="iv_cd_star_03">Terceira estrela da avaliação</string>
+    <string name="iv_cd_star_04">Quarta estrela da avaliação</string>
+    <string name="iv_cd_star_05">Quinta estrela da avaliação</string>
+
+    <string name="favorites_removed_movie">Filme removido com sucesso da lista de Favoritos</string>
+    <string name="favorites_removed_movies">Filmes removidos com sucesso da lista de Favoritos</string>
+</resources>

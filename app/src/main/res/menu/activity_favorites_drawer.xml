@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_launch"
+            android:title="@string/item_label_launch"/>
+        <item
+            android:id="@+id/nav_more_views"
+            android:title="@string/item_label_more_views"/>
+        <item
+            android:id="@+id/nav_week_recommended"
+            android:title="@string/item_label_week_recommended"/>
+        <item
+            android:id="@+id/nav_categories"
+            android:title="@string/item_label_categories"/>
+        <item
+            android:id="@+id/nav_directors"
+            android:title="@string/item_label_directors"/>
+        <item
+            android:id="@+id/nav_actors_actress"
+            android:title="@string/item_label_actors_actress"/>
+        <item
+            android:checked="true"
+            android:id="@+id/nav_favorites"
+            android:title="@string/item_label_favorites"/>
+    </group>
+</menu>

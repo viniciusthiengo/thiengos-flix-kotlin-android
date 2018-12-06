@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF0000</color>
+
+    <color name="colorItemNormal">#C0CCDA</color>
+
+    <color name="colorRedTransparent">#88FF0000</color>
+
+    <color name="colorItemBackground">#222222</color>
+    <color name="colorItemText">#999999</color>
+    <color name="colorItemStar">#F4C54F</color>
+    <color name="colorItemCategory">#77D353</color>
+
+    <color name="colorItemSelectedBackground">#F95F62</color>
+    <color name="colorItemSelectedText">#333333</color>
+</resources>
