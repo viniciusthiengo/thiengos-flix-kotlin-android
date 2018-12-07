@@ -7,5 +7,4 @@ class Movie(
     val directors: String,
     val rating: Rating,
     val category: String,
-    val resume: String ) {
-}
+    val resume: String )

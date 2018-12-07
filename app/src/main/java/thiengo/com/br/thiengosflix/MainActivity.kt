@@ -59,7 +59,7 @@ class MainActivity :
     }
 
     override fun onCreateOptionsMenu( menu: Menu ): Boolean {
-        menuInflater.inflate( R.menu.favorites, menu )
+        menuInflater.inflate( R.menu.main, menu )
         return true
     }
 

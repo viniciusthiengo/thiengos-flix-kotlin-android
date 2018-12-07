@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ThiengosFlix</string>
 
@@ -26,6 +27,10 @@
     <string name="iv_cd_star_04">Quarta estrela da avaliação</string>
     <string name="iv_cd_star_05">Quinta estrela da avaliação</string>
 
-    <string name="favorites_removed_movie">Filme removido com sucesso da lista de Favoritos</string>
-    <string name="favorites_removed_movies">Filmes removidos com sucesso da lista de Favoritos</string>
+    <string name="favorites_removed_movie">
+        Filme removido com sucesso da lista de Favoritos
+    </string>
+    <string name="favorites_removed_movies">
+        Filmes removidos com sucesso da lista de Favoritos
+    </string>
 </resources>

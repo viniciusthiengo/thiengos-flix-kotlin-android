@@ -4,13 +4,13 @@
 
     <!-- Estado "Selecionado" -->
     <item
-            android:color="@android:color/white"
-            android:state_checked="true" />
+        android:color="@android:color/white"
+        android:state_checked="true" />
 
     <!-- Estado "Pressionado" -->
     <item
-            android:color="@android:color/white"
-            android:state_pressed="true" />
+        android:color="@android:color/white"
+        android:state_pressed="true" />
 
     <!-- Estado "Normal", não selecionado -->
     <item android:color="@color/colorItemNormal" />

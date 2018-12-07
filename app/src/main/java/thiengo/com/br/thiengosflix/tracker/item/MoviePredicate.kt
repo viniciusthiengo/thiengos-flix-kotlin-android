@@ -29,7 +29,6 @@ class MoviePredicate: SelectionTracker.SelectionPredicate<Long>() {
      * Retorne true se o item referente a position puder ser definido
      * como nextState.
      * */
-    override fun canSetStateAtPosition(p0: Int, p1: Boolean): Boolean {
-        return true
-    }
+    override fun canSetStateAtPosition(p0: Int, p1: Boolean)
+        = true
 }
