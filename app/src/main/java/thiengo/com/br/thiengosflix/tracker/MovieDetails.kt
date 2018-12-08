@@ -1,4 +1,4 @@
-package thiengo.com.br.thiengosflix.tracker.item
+package thiengo.com.br.thiengosflix.tracker
 
 import android.view.MotionEvent
 import androidx.recyclerview.selection.ItemDetailsLookup
@@ -21,18 +21,18 @@ class MovieDetails(
      * do item.
      * */
     override fun getSelectionKey()
-        = movie!!.id.toLong()
+            = movie!!.id.toLong()
 
     /*
      * Retorna a posição do item no adaptador do RecyclerView
      * (ViewHolder.getAdapterPosition).
      * */
     override fun getPosition()
-        = adapterPosition
+            = adapterPosition
 
     /*
      * Retorne "true" se o item tiver uma chave estável de seleção.
      * */
     override fun inSelectionHotspot( e: MotionEvent )
-        = true
+            = true
 }

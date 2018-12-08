@@ -1,4 +1,4 @@
-package thiengo.com.br.thiengosflix.tracker.item
+package thiengo.com.br.thiengosflix.tracker
 
 import android.support.v7.widget.RecyclerView
 import android.view.MotionEvent

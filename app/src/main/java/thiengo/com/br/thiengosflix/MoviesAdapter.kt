@@ -12,7 +12,7 @@ import androidx.recyclerview.selection.SelectionTracker
 import com.squareup.picasso.Picasso
 import thiengo.com.br.thiengosflix.domain.Movie
 import thiengo.com.br.thiengosflix.domain.Rating
-import thiengo.com.br.thiengosflix.tracker.item.MovieDetails
+import thiengo.com.br.thiengosflix.tracker.MovieDetails
 
 class MoviesAdapter( val movies: List<Movie> ):
     RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
@@ -20,9 +20,9 @@ class MoviesAdapter( val movies: List<Movie> ):
     lateinit var selectionTracker : SelectionTracker<Long>
 
     override fun onCreateViewHolder(
-            parent: ViewGroup,
-            viewType: Int
-        ): ViewHolder {
+        parent: ViewGroup,
+        viewType: Int
+    ): ViewHolder {
 
         val layout = LayoutInflater
             .from( parent.context )
@@ -38,9 +38,9 @@ class MoviesAdapter( val movies: List<Movie> ):
     override fun getItemCount() = movies.size
 
     override fun onBindViewHolder(
-            holder: ViewHolder,
-            position: Int )
-        {
+        holder: ViewHolder,
+        position: Int )
+    {
 
         holder.setModel( movies[ position ], position )
     }
@@ -111,17 +111,17 @@ class MoviesAdapter( val movies: List<Movie> ):
              * seleção / desseleção de um item, já com o status
              * alterado.
              * */
-                movieDetails.movie = movie
-                movieDetails.adapterPosition = position
+            movieDetails.movie = movie
+            movieDetails.adapterPosition = position
 
-                if( selectionTracker.isSelected( movieDetails.getSelectionKey() ) ){
-                    itemView.isActivated = true
-                    setUIItemSelected()
-                }
-                else{
-                    itemView.isActivated = false
-                    setUIItemNotSelected()
-                }
+            if( selectionTracker.isSelected( movieDetails.getSelectionKey() ) ){
+                itemView.isActivated = true
+                setUIItemSelected()
+            }
+            else{
+                itemView.isActivated = false
+                setUIItemNotSelected()
+            }
         }
 
         private fun setRating( rating: Rating ){

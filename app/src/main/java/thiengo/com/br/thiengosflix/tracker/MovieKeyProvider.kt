@@ -1,4 +1,4 @@
-package thiengo.com.br.thiengosflix.tracker.item
+package thiengo.com.br.thiengosflix.tracker
 
 import androidx.recyclerview.selection.ItemKeyProvider
 import thiengo.com.br.thiengosflix.domain.Movie
@@ -22,18 +22,18 @@ class MovieKeyProvider( val movies: List<Movie> )
      * o identificador único dele se manterá o mesmo.
      * */
     override fun getKey( position: Int )
-        = movies[ position ].id.toLong()
+            = movies[ position ].id.toLong()
 
     /*
      * Retornar a posição do item de acordo com a chave
      * estável informada como parâmetro.
      * */
     override fun getPosition( key: Long )
-        = movies
-            .indexOf(
-                movies.filter {
+            = movies
+        .indexOf(
+            movies.filter {
                     movie -> movie.id.toLong() == key
-                }
+            }
                 .single()
-            )
+        )
 }

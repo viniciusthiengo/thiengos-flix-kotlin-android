@@ -13,9 +13,9 @@ import androidx.recyclerview.selection.StorageStrategy
 import kotlinx.android.synthetic.main.fragment_favorites.*
 import thiengo.com.br.thiengosflix.data.Database
 import thiengo.com.br.thiengosflix.domain.Movie
-import thiengo.com.br.thiengosflix.tracker.item.MovieKeyProvider
-import thiengo.com.br.thiengosflix.tracker.item.MovieLookup
-import thiengo.com.br.thiengosflix.tracker.item.MoviePredicate
+import thiengo.com.br.thiengosflix.tracker.MovieKeyProvider
+import thiengo.com.br.thiengosflix.tracker.MovieLookup
+import thiengo.com.br.thiengosflix.tracker.MoviePredicate
 
 class FavoritesFragment : Fragment() {
 
@@ -28,10 +28,10 @@ class FavoritesFragment : Fragment() {
     lateinit var selectionTracker: SelectionTracker<Long>
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View? {
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
         /*
          * Para manter o objeto do fragmento em memória.
@@ -73,8 +73,8 @@ class FavoritesFragment : Fragment() {
             MovieLookup( rv_movies ),
             StorageStrategy.createLongStorage()
         )
-        .withSelectionPredicate( MoviePredicate() )
-        .build()
+            .withSelectionPredicate( MoviePredicate() )
+            .build()
 
         (rv_movies.adapter as MoviesAdapter).selectionTracker = selectionTracker
 
@@ -117,9 +117,9 @@ class FavoritesFragment : Fragment() {
 
     private fun removeMessage( amountRemoved: Int ){
         val messageId = if( amountRemoved == 1 )
-                R.string.favorites_removed_movie
-            else
-                R.string.favorites_removed_movies
+            R.string.favorites_removed_movie
+        else
+            R.string.favorites_removed_movies
 
         Toast
             .makeText(
